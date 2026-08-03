@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Home Finders | Real Estate, Property Management & Investment Advisory in Port Harcourt, Lagos, Abuja & Owerri</title>
+  <meta name="description" content="Founded in 1999 by Engr. Christopher Okoro, Ultimate Home Finders brings 26 years of trusted real estate expertise across Port Harcourt (HQ), Lagos, Abuja, and Owerri.">
+  <meta name="keywords" content="Real Estate Port Harcourt, Property Management Rivers State, Real Estate Lagos, Buy House Abuja, Property Owerri, Real Estate Investment Advisory Nigeria, Ultimate Home Finders">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Ultimate Home Finders — 26 Years of Trusted Real Estate Solutions in Port Harcourt, Lagos, Abuja & Owerri">
+  <meta property="og:description" content="Full-service real estate partner with HQ in Port Harcourt and operations in Lagos, Abuja, and Owerri. Property Management, Sales, Rentals & Investment Advisory.">
+  <meta property="og:image" content="./assets/hero.jpg">
+  <meta property="og:url" content="https://ultimatehomefinders.com">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display for Headings, Inter for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Ultimate Home Finders",
+    "image": "https://ultimatehomefinders.com/assets/logo.svg",
+    "@id": "https://ultimatehomefinders.com",
+    "url": "https://ultimatehomefinders.com",
+    "telephone": "+2348033408144",
+    "email": "homefiders@ymail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Block 16, Flat 1, 2nd Avenue, Elekahia Housing Estate",
+      "addressLocality": "Port Harcourt",
+      "addressRegion": "Rivers State",
+      "addressCountry": "NG"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Engr. Christopher Okoro",
+      "jobTitle": "Chief Executive Officer"
+    },
+    "foundingDate": "1999",
+    "areaServed": ["Port Harcourt", "Lagos", "Abuja", "Owerri"],
+    "description": "26 years of full-service real estate expertise headquartered in Port Harcourt with operations in Lagos, Abuja, and Owerri. Property Management, Sales & Letting Agency, Buying Agency, Real Estate Investment Advisory."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Glass Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#home" class="logo-link" aria-label="Ultimate Home Finders Home">
+        <img src="./assets/logo.svg" alt="Ultimate Home Finders Logo" class="brand-logo">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#team" class="nav-link">Our Team</a>
+        <a href="#listings" class="nav-link">Listings</a>
+        <a href="#contact" class="nav-link btn-nav-cta">Contact Us</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="drawer-header">
+        <img src="./assets/logo.svg" alt="Logo" class="drawer-logo">
+        <button class="drawer-close" id="drawer-close" aria-label="Close menu"><i data-lucide="x"></i></button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#about" class="mobile-nav-link">About Us</a>
+        <a href="#team" class="mobile-nav-link">Our Team</a>
+        <a href="#listings" class="mobile-nav-link">Listings</a>
+        <a href="#contact" class="mobile-nav-link mobile-cta">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop">
+      <img src="./assets/hero.jpg" alt="Port Harcourt & Nigerian Real Estate" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i data-lucide="award"></i> Est. 1999 — 26 Years of Excellence
+      </div>
+      <h1 class="hero-title">26 Years of Trusted Real Estate Solutions in Port Harcourt & Beyond</h1>
+      <p class="hero-subtitle">
+        Headquartered in Port Harcourt with active real estate operations in Lagos, Abuja, and Owerri. Your hands-on, full-service partner for property management, sales, rentals, and investment advisory.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <i data-lucide="message-square"></i> Get in Touch
+        </a>
+        <button class="btn btn-secondary btn-lg" id="hero-listings-btn">
+          <i data-lucide="external-link"></i> View Our Listings
+        </button>
+      </div>
+
+      <!-- Trust Strip -->
+      <div class="trust-strip">
+        <div class="trust-item">
+          <div class="trust-number">26</div>
+          <div class="trust-label">Years in Business</div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <div class="trust-number">4 Cities</div>
+          <div class="trust-label">PH (HQ), Lagos, Abuja, Owerri</div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <div class="trust-number">100%</div>
+          <div class="trust-label">Diligence Verified</div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <div class="trust-number">Elekahia</div>
+          <div class="trust-label">Port Harcourt Head Office</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section section-padding" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Comprehensive Real Estate Services</h2>
+        <p class="section-description">
+          Operating across Port Harcourt, Lagos, Abuja, and Owerri — Ultimate Home Finders manages every stage of property ownership and real estate investment.
+        </p>
+      </div>
+
+      <!-- 6-Item Grid -->
+      <div class="services-grid">
+        
+        <!-- Service 1: Property Management -->
+        <div class="service-card" data-service="management">
+          <div class="service-icon"><i data-lucide="building-2"></i></div>
+          <h3 class="service-name">Property Management</h3>
+          <p class="service-desc">
+            Full oversight for owners who can't personally oversee properties. We handle tenancy matters, resolve tenant issues, collect rent, and source qualified tenants.
+          </p>
+          <button class="service-link-btn" onclick="openServiceModal('management')">Learn more <i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <!-- Service 2: Sales & Letting Agency -->
+        <div class="service-card" data-service="sales">
+          <div class="service-icon"><i data-lucide="key-round"></i></div>
+          <h3 class="service-name">Sales & Letting Agency</h3>
+          <p class="service-desc">
+            Acting as trusted agents for the sale of land and buildings, and for renting residential & commercial properties in Port Harcourt, Lagos, Abuja, and Owerri.
+          </p>
+          <button class="service-link-btn" onclick="openServiceModal('sales')">Learn more <i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <!-- Service 3: Buying Agency & Property Search -->
+        <div class="service-card" data-service="buying">
+          <div class="service-icon"><i data-lucide="search-check"></i></div>
+          <h3 class="service-name">Buying Agency & Search</h3>
+          <p class="service-desc">
+            Representing buyers and tenants directly — sourcing verified properties for sale or rent tailored specifically to your budget and location preferences.
+          </p>
+          <button class="service-link-btn" onclick="openServiceModal('buying')">Learn more <i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <!-- Service 4: Real Estate Investment Advisory -->
+        <div class="service-card" data-service="investment">
+          <div class="service-icon"><i data-lucide="trending-up"></i></div>
+          <h3 class="service-name">Investment Advisory</h3>
+          <p class="service-desc">
+            Using empirical market data to identify and rank high-ROI opportunities for capital deployment, followed by hands-on acquisition negotiation.
+          </p>
+          <button class="service-link-btn" onclick="openServiceModal('investment')">Learn more <i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <!-- Service 5: Small-Scale Estate Development -->
+        <div class="service-card" data-service="development">
+          <div class="service-icon"><i data-lucide="hammer"></i></div>
+          <h3 class="service-name">Small-Scale Estate Development</h3>
+          <p class="service-desc">
+            Taking on select, highly manageable development projects that deliver architectural quality, structural integrity, and long-term value.
+          </p>
+          <button class="service-link-btn" onclick="openServiceModal('development')">Learn more <i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <!-- Service 6: Rentals Agency -->
+        <div class="service-card" data-service="rentals">
+          <div class="service-icon"><i data-lucide="home"></i></div>
+          <h3 class="service-name">Rentals Agency</h3>
+          <p class="service-desc">
+            Connecting serious tenants with verified landlords. Sourcing quality apartments, duplexes, office spaces, and commercial properties.
+          </p>
+          <button class="service-link-btn" onclick="openServiceModal('rentals')">Learn more <i data-lucide="arrow-right"></i></button>
+        </div>
+
+      </div>
+
+      <!-- 7th Distinct Banner: Vetted Professional Referrals -->
+      <div class="referrals-banner">
+        <div class="referrals-content">
+          <div class="referrals-badge"><i data-lucide="shield-check"></i> On-Demand Value Add</div>
+          <h3>Trusted Professional Referrals</h3>
+          <p>
+            Need accredited land surveyors, real estate attorneys, structural engineers, or architects? We connect our clients directly to a vetted network of proven professionals on demand — serving as your single door to complete transaction confidence.
+          </p>
+        </div>
+        <div class="referrals-action">
+          <button class="btn btn-outline-light" onclick="selectInquiryType('Trusted Professional Referrals')">
+            Request Referral <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Investment Advisory Spotlight -->
+  <section class="investment-spotlight section-padding">
+    <div class="container">
+      <div class="spotlight-card">
+        <div class="spotlight-grid">
+          <div class="spotlight-text">
+            <span class="spotlight-tag"><i data-lucide="line-chart"></i> Strategic Wealth Growth</span>
+            <h2>Real Estate Investment Advisory</h2>
+            <p class="spotlight-intro">
+              Put idle capital to work with data-driven real estate acquisitions in prime markets across Port Harcourt, Lagos, Abuja, and Owerri.
+            </p>
+            
+            <div class="process-steps">
+              <div class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <h4>Market Analysis & Ranking</h4>
+                  <p>We analyze yield rates, land appreciation, and tenant demand to rank opportunities by expected ROI.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <h4>Diligence & Acquisition Strategy</h4>
+                  <p>We verify title documentation, land registry records, and physical site parameters prior to purchase.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                  <h4>Negotiation & Execution</h4>
+                  <p>Acting as your direct agent, we negotiate the best achievable price and execute seamless closing.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="spotlight-cta">
+              <button class="btn btn-primary" onclick="selectInquiryType('Investment Advisory')">
+                <i data-lucide="user-check"></i> Talk to an Investment Advisor
+              </button>
+            </div>
+          </div>
+
+          <div class="spotlight-visual">
+            <img src="./assets/investment.jpg" alt="Real Estate Investment Advisory" class="spotlight-img">
+            <div class="spotlight-floating-card">
+              <div class="floating-icon"><i data-lucide="check-circle-2"></i></div>
+              <div>
+                <strong>Maximizing ROI</strong>
+                <span>Hands-on execution for investors</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- "Why Ultimate Home Finders" / Value Proposition -->
+  <section class="why-us-section section-padding bg-alt" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Our Differentiators</span>
+        <h2 class="section-title">Why Ultimate Home Finders?</h2>
+        <p class="section-description">
+          Real estate can be complicated, time-consuming, and full of risk without local expertise. We close that gap with 26 years of hands-on capability across Nigeria.
+        </p>
+      </div>
+
+      <div class="value-pillars-grid">
+        
+        <div class="pillar-card">
+          <div class="pillar-icon"><i data-lucide="calendar"></i></div>
+          <h3>26 Years Market Leadership</h3>
+          <p>Founded in 1999 by Engr. Christopher Okoro, our deep roots provide market insight across Port Harcourt, Lagos, Abuja & Owerri.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i data-lucide="shield-alert"></i></div>
+          <h3>Verified, Diligence-First</h3>
+          <p>Every land title, building structure, and seller credential undergoes rigorous verification before reaching our clients.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i data-lucide="map-pin"></i></div>
+          <h3>Multi-City Operations</h3>
+          <p>Headquartered at Elekahia Estate in Port Harcourt, with active agency and advisory channels serving Lagos, Abuja, and Owerri.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i data-lucide="handshake"></i></div>
+          <h3>Hands-On Leadership</h3>
+          <p>Our executive team personally oversees operations, giving property owners and investors direct accountability.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership / Team Section -->
+  <section class="team-section section-padding" id="team">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Leadership</span>
+        <h2 class="section-title">Meet Our Leadership Team</h2>
+        <p class="section-description">
+          Experienced, accessible professionals dedicated to protecting and growing your real estate investments.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        
+        <!-- CEO -->
+        <div class="team-card leader-main">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-placeholder">
+              <i data-lucide="user-check"></i>
+            </div>
+            <span class="executive-badge">CEO</span>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Engr. Christopher Okoro</h3>
+            <div class="team-role">Chief Executive Officer</div>
+            <p class="team-bio">Founder & Principal Engineer with 26 years of leadership guiding real estate investments and developments.</p>
+            <a href="./ceo-profile.html" class="btn btn-ceo-bio">Read Full Bio <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Chidinma -->
+        <div class="team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-placeholder"><i data-lucide="user"></i></div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Chidinma</h3>
+            <div class="team-role">Head of Operations</div>
+            <p class="team-bio">Directing operational workflows, client onboarding, and tenancy management standards.</p>
+          </div>
+        </div>
+
+        <!-- Chinyere -->
+        <div class="team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-placeholder"><i data-lucide="user"></i></div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Chinyere</h3>
+            <div class="team-role">Head of Operations</div>
+            <p class="team-bio">Overseeing client relationships, agency transactions, and quality assurance processes.</p>
+          </div>
+        </div>
+
+        <!-- David -->
+        <div class="team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-placeholder"><i data-lucide="user"></i></div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">David</h3>
+            <div class="team-role">Technical Director</div>
+            <p class="team-bio">Leading structural evaluations, small-scale development logistics, and technical diligence.</p>
+          </div>
+        </div>
+
+        <!-- Teddy -->
+        <div class="team-card">
+          <div class="team-avatar-wrapper">
+            <div class="team-avatar-placeholder"><i data-lucide="user"></i></div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Teddy</h3>
+            <div class="team-role">Head of Logistics</div>
+            <p class="team-bio">Managing site visits, field operations, property inspections, and transportation coordination.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Listings Section ("Where to Find Our Properties") -->
+  <section class="listings-section section-padding bg-alt" id="listings">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Active Inventory</span>
+        <h2 class="section-title">Browse Our Current Listings</h2>
+        <p class="section-description">
+          Our complete, up-to-date property inventory across Port Harcourt, Lagos, Abuja, and Owerri is hosted on Nigeria's premier verified portals.
+        </p>
+      </div>
+
+      <div class="portals-grid">
+        
+        <!-- Nigeria Property Centre Card -->
+        <div class="portal-card">
+          <div class="portal-badge"><i data-lucide="check-circle-2"></i> Verified Partner Profile</div>
+          <div class="portal-logo-wrapper">
+            <i data-lucide="building" class="portal-icon"></i>
+            <h3 class="portal-title">Nigeria Property Centre</h3>
+          </div>
+          <p class="portal-desc">
+            Explore our curated residential plots, commercial spaces, and luxury homes currently available for sale or rent.
+          </p>
+          <a href="#" id="npc-portal-link" target="_blank" rel="noopener noreferrer" class="btn btn-portal btn-block">
+            View Listings on Nigeria Property Centre <i data-lucide="external-link"></i>
+          </a>
+        </div>
+
+        <!-- PropertyPro.ng Card -->
+        <div class="portal-card">
+          <div class="portal-badge"><i data-lucide="check-circle-2"></i> Verified Partner Profile</div>
+          <div class="portal-logo-wrapper">
+            <i data-lucide="home" class="portal-icon"></i>
+            <h3 class="portal-title">PropertyPro.ng</h3>
+          </div>
+          <p class="portal-desc">
+            Browse our complete portfolio of managed apartments, office suites, and investment lands on PropertyPro Nigeria.
+          </p>
+          <a href="#" id="propertypro-portal-link" target="_blank" rel="noopener noreferrer" class="btn btn-portal btn-block">
+            View Listings on PropertyPro.ng <i data-lucide="external-link"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="portal-note text-center">
+        <p><i data-lucide="info"></i> Have a specific property requirement not listed on portals? <a href="#contact" onclick="selectInquiryType('Property Search')">Contact our Property Search team directly</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Client Trust</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-description">
+          Over 26 years of building strong, lasting relationships with property owners, buyers, and investors across Nigeria.
+        </p>
+      </div>
+
+      <div class="testimonials-slider" id="testimonials-slider">
+        
+        <div class="testimonial-card active">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Ultimate Home Finders has managed my residential flats in Elekahia for over 8 years while I live abroad. Rent is collected promptly and tenancy issues are resolved without stress."
+          </p>
+          <div class="testimonial-author">
+            <strong>Dr. K. Amadi</strong>
+            <span>Property Owner & Landlord</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Engr. Okoro and his team guided us through an investment acquisition in Port Harcourt and Abuja. Their market data on rental yields proved spot-on."
+          </p>
+          <div class="testimonial-author">
+            <strong>Engr. B. Nwachukwu</strong>
+            <span>Real Estate Investor</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Sourcing commercial office space in PH and Lagos was seamless. They represented us as buying agents and secured ideal terms."
+          </p>
+          <div class="testimonial-author">
+            <strong>Mrs. O. Davies</strong>
+            <span>Corporate Tenant</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slider-controls text-center">
+        <button class="slider-dot active" onclick="setTestimonial(0)" aria-label="Testimonial 1"></button>
+        <button class="slider-dot" onclick="setTestimonial(1)" aria-label="Testimonial 2"></button>
+        <button class="slider-dot" onclick="setTestimonial(2)" aria-label="Testimonial 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Lead Capture Section -->
+  <section class="contact-section section-padding bg-alt" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Start Your Property Conversation</h2>
+        <p class="section-description">
+          Headquartered in Port Harcourt with services extending to Lagos, Abuja, and Owerri. Our team is ready to assist.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Form Column -->
+        <div class="contact-form-card">
+          <h3 class="form-title">Send Us an Inquiry</h3>
+          <form id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input type="text" id="fullName" class="form-control" placeholder="e.g. Chinedu Ebere" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" class="form-control" placeholder="+234 803 340 8144" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" class="form-control" placeholder="homefiders@ymail.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryType">Inquiry Type <span class="required">*</span></label>
+              <select id="inquiryType" class="form-control" required>
+                <option value="" disabled selected>Select service required...</option>
+                <option value="Property Management">Property Management</option>
+                <option value="Buy or Sell Property">Buy or Sell Property</option>
+                <option value="Rent a Property">Rent a Property</option>
+                <option value="Investment Advisory">Investment Advisory</option>
+                <option value="Property Search">Property Search</option>
+                <option value="Estate Development">Small-Scale Estate Development</option>
+                <option value="Trusted Professional Referrals">Trusted Professional Referrals</option>
+                <option value="Other">Other Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Describe your property requirement or questions..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="form-submit-btn">
+              <i data-lucide="send"></i> Send Inquiry
+            </button>
+          </form>
+        </div>
+
+        <!-- Office Details & Direct Channels Column -->
+        <div class="contact-details-card">
+          <h3 class="details-title">Contact Information</h3>
+          
+          <div class="detail-item">
+            <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+            <div class="detail-text">
+              <strong>Head Office Address (Port Harcourt)</strong>
+              <p>
+                Block 16, Flat 1, 2nd Avenue, Elekahia Housing Estate, Port Harcourt, Rivers State, Nigeria.
+                <br>
+                <a href="https://maps.app.goo.gl/qsb1GytqnWioEgnS6" target="_blank" rel="noopener noreferrer" class="map-direct-link">
+                  <i data-lucide="external-link"></i> View on Google Maps
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon"><i data-lucide="globe-2"></i></div>
+            <div class="detail-text">
+              <strong>Operational Cities</strong>
+              <p>Port Harcourt (Head Office), Lagos, Abuja, and Owerri</p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon"><i data-lucide="phone"></i></div>
+            <div class="detail-text">
+              <strong>Phone Line</strong>
+              <p><a href="tel:+2348033408144" id="phone-display">+234 803 340 8144</a></p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon"><i data-lucide="mail"></i></div>
+            <div class="detail-text">
+              <strong>Email Address</strong>
+              <p><a href="mailto:homefiders@ymail.com" id="email-display">homefiders@ymail.com</a></p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon"><i data-lucide="clock"></i></div>
+            <div class="detail-text">
+              <strong>Business Hours</strong>
+              <p>Monday – Friday: 8:00 AM – 5:00 PM<br>Saturday: 9:00 AM – 2:00 PM</p>
+            </div>
+          </div>
+
+          <!-- WhatsApp Direct Action Button -->
+          <div class="whatsapp-card-action">
+            <div class="wa-info">
+              <i data-lucide="message-circle" class="wa-icon"></i>
+              <div>
+                <strong>Instant WhatsApp Chat</strong>
+                <span>Connect directly with our operations team</span>
+              </div>
+            </div>
+            <a href="https://wa.me/2348033408144?text=Hello%20Ultimate%20Home%20Finders,%20I%20would%20like%20to%20make%20an%20inquiry." id="wa-card-link" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block">
+              Chat on WhatsApp (+234 803 340 8144) <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Embedded Interactive Google Map Card with Direct Location Link -->
+          <a href="https://maps.app.goo.gl/qsb1GytqnWioEgnS6" target="_blank" rel="noopener noreferrer" class="map-container-link" title="Open Office Location in Google Maps">
+            <div class="map-container">
+              <img src="./assets/office.jpg" alt="Elekahia Office Building" class="map-bg">
+              <div class="map-overlay">
+                <i data-lucide="map-pin" class="map-pin-icon"></i>
+                <span>Elekahia Housing Estate, Port Harcourt</span>
+                <span class="map-click-hint"><i data-lucide="navigation"></i> Open Google Maps Pin</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      
+      <div class="footer-col brand-col">
+        <img src="./assets/logo-white.svg" alt="Ultimate Home Finders Logo" class="footer-logo">
+        <p class="footer-tagline">
+          Founded in 1999 by Engr. Christopher Okoro. 26 years of reliability and hands-on real estate partnership across Port Harcourt (HQ), Lagos, Abuja, and Owerri.
+        </p>
+        
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="#" id="social-facebook" target="_blank" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" id="social-instagram" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" id="social-linkedin" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="https://wa.me/2348033408144" id="social-whatsapp" target="_blank" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#about">About UHF</a></li>
+          <li><a href="#team">Leadership Team</a></li>
+          <li><a href="./ceo-profile.html">CEO Profile</a></li>
+          <li><a href="#listings">Active Listings</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Operational Cities</h4>
+        <ul class="footer-links">
+          <li><a href="#contact">Port Harcourt (Head Office)</a></li>
+          <li><a href="#contact">Lagos Operations</a></li>
+          <li><a href="#contact">Abuja Operations</a></li>
+          <li><a href="#contact">Owerri Operations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Head Office Location</h4>
+        <p class="footer-address">
+          Block 16, Flat 1, 2nd Avenue,<br>
+          Elekahia Housing Estate,<br>
+          Port Harcourt, Rivers State, Nigeria.
+        </p>
+        <p class="footer-contact-info">
+          Phone: <span id="footer-phone">+234 803 340 8144</span><br>
+          Email: <span id="footer-email">homefiders@ymail.com</span>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© <span id="current-year">2026</span> Ultimate Home Finders. All rights reserved.</p>
+        <div class="legal-links">
+          <button onclick="openLegalModal('privacy')" class="legal-btn">Privacy Policy</button>
+          <span class="dot-sep">•</span>
+          <button onclick="openLegalModal('terms')" class="legal-btn">Terms of Use</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/2348033408144?text=Hello%20Ultimate%20Home%20Finders,%20I%20have%20a%20property%20inquiry." id="floating-wa-btn" target="_blank" rel="noopener noreferrer" class="floating-wa" aria-label="Chat on WhatsApp">
+    <i data-lucide="message-circle"></i>
+    <span class="wa-tooltip">Chat with UHF Team (+234 803 340 8144)</span>
+  </a>
+
+  <!-- Service Detail Modal -->
+  <div class="modal-backdrop" id="service-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeServiceModal()" aria-label="Close modal"><i data-lucide="x"></i></button>
+      <div class="modal-header">
+        <div class="modal-icon" id="modal-service-icon"><i data-lucide="building"></i></div>
+        <h3 id="modal-service-title">Service Details</h3>
+      </div>
+      <div class="modal-body" id="modal-service-content">
+        <!-- Content inserted dynamically by app.js -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="modal-inquire-btn" onclick="modalInquireAction()">Inquire About This Service</button>
+        <button class="btn btn-secondary" onclick="closeServiceModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legal Modal (Privacy & Terms) -->
+  <div class="modal-backdrop" id="legal-modal" aria-hidden="true">
+    <div class="modal-card modal-lg">
+      <button class="modal-close" onclick="closeLegalModal()" aria-label="Close modal"><i data-lucide="x"></i></button>
+      <div class="modal-header">
+        <h3 id="modal-legal-title">Legal Document</h3>
+      </div>
+      <div class="modal-body legal-text-content" id="modal-legal-content">
+        <!-- Legal content dynamically injected -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeLegalModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="./app.js"></script>
+</body>
+</html>
