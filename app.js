@@ -400,3 +400,156 @@ function showToast(message, type = "success") {
     setTimeout(() => toast.remove(), 300);
   }, 4000);
 }
+
+/* Portal Slideshow (Section 3.7 — Rotating Listings Tab) */
+let currentPortalIndex = 0;
+let portalAutoInterval;
+const PORTAL_AUTO_DELAY = 4500;
+
+function initPortalSlideshow() {
+  const slides = document.querySelectorAll('.portal-slide');
+  if (slides.length === 0) return;
+
+  // Set first slide active
+  setPortalSlide(0);
+
+  // Auto-advance
+  startPortalAuto();
+
+  // Pause on hover
+  const wrapper = document.getElementById('portal-slideshow-wrapper');
+  if (wrapper) {
+    wrapper.addEventListener('mouseenter', stopPortalAuto);
+    wrapper.addEventListener('mouseleave', startPortalAuto);
+    wrapper.addEventListener('touchstart', stopPortalAuto, { passive: true });
+    wrapper.addEventListener('touchend', () => setTimeout(startPortalAuto, 3000), { passive: true });
+  }
+
+  // Keyboard support
+  document.addEventListener('keydown', (e) => {
+    if (!document.getElementById('portal-slideshow-wrapper')) return;
+    if (e.key === 'ArrowLeft') movePortalSlide(-1);
+    if (e.key === 'ArrowRight') movePortalSlide(1);
+  });
+}
+
+function startPortalAuto() {
+  stopPortalAuto();
+  portalAutoInterval = setInterval(() => {
+    const slides = document.querySelectorAll('.portal-slide');
+    if (slides.length === 0) return;
+    currentPortalIndex = (currentPortalIndex + 1) % slides.length;
+    setPortalSlide(currentPortalIndex);
+  }, PORTAL_AUTO_DELAY);
+}
+
+function stopPortalAuto() {
+  clearInterval(portalAutoInterval);
+}
+
+function movePortalSlide(direction) {
+  const slides = document.querySelectorAll('.portal-slide');
+  if (slides.length === 0) return;
+  currentPortalIndex = (currentPortalIndex + direction + slides.length) % slides.length;
+  setPortalSlide(currentPortalIndex);
+  // Reset auto timer on manual navigation
+  stopPortalAuto();
+  startPortalAuto();
+}
+
+function setPortalSlide(index) {
+  const slides = document.querySelectorAll('.portal-slide');
+  const dots = document.querySelectorAll('.portal-dot');
+
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+    dot.setAttribute('aria-current', i === index ? 'true' : 'false');
+  });
+
+  currentPortalIndex = index;
+}
+
+// Initialize portal slideshow on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  initPortalSlideshow();
+});
+
+/* Featured Listings Filter Functionality */
+function filterListings(category) {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  filterBtns.forEach(btn => btn.classList.remove('active'));
+  
+  const activeBtn = Array.from(filterBtns).find(btn => btn.getAttribute('onclick').includes(`'${category}'`));
+  if (activeBtn) activeBtn.classList.add('active');
+
+  const propertyCards = document.querySelectorAll('.property-card');
+  propertyCards.forEach(card => {
+    const cardCat = card.getAttribute('data-category');
+    if (category === 'all' || cardCat === category) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+/* Inquire Property Action Function */
+function inquireProperty(propertyTitle, inquiryType) {
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  const selectEl = document.getElementById('inquiryType');
+  if (selectEl && inquiryType) {
+    selectEl.value = inquiryType;
+  }
+
+  const messageEl = document.getElementById('message');
+  if (messageEl) {
+    messageEl.value = `Hello Ultimate Home Finders, I am interested in inquiring about: "${propertyTitle}". Please provide details on availability, verified documentation, and inspection schedule.`;
+    setTimeout(() => messageEl.focus(), 600);
+  }
+}
+
+/* Article Social Share Function (Section 3.9a Article Pages) */
+function shareArticle(platform) {
+  const url = encodeURIComponent(window.location.href);
+  const title = encodeURIComponent(document.title);
+  const text = encodeURIComponent(document.querySelector('meta[name="description"]')?.content || document.title);
+
+  const shareUrls = {
+    whatsapp: `https://wa.me/?text=${text}%20${url}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+    twitter: `https://twitter.com/intent/tweet?url=${url}&text=${title}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`
+  };
+
+  if (platform === 'native' && navigator.share) {
+    navigator.share({
+      title: document.title,
+      text: document.querySelector('meta[name="description"]')?.content || document.title,
+      url: window.location.href
+    }).catch(() => {});
+    return;
+  }
+
+  if (platform === 'copy') {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        showToast('Article link copied to clipboard!', 'success');
+      }).catch(() => {
+        showToast('Could not copy link. Please copy from the address bar.', 'error');
+      });
+    }
+    return;
+  }
+
+  if (shareUrls[platform]) {
+    window.open(shareUrls[platform], '_blank', 'noopener,noreferrer,width=600,height=500');
+  }
+}
